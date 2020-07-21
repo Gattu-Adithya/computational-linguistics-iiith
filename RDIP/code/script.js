@@ -371,4 +371,52 @@ function reform()
             }
         }
     }
+ function check()
+    {
+        var result= selectedSentence.trim();
+       
+        if(language=='eng')
+        {
+            if (randomEnglish.includes(result))
+            {
+            document.getElementById("correct").innerHTML="Correct Answer!!!";
+            document.getElementById("wrong").innerHTML="";
+            document.getElementById("showAnswer").innerHTML=""
+
+            }
+            else{
+                document.getElementById("wrong").innerHTML="Wrong Answer !!!";
+                document.getElementById("correct").innerHTML="";
+                document.getElementById("showAnswer").innerHTML="<button id='show' onclick='show(this.id)'>Get Correct Sentence</button>"
+            }
+        }
+        else if(language=='hindi')
+        {var i=0;
+            result=result.trim();
+            console.log(result)
+            for(i=0;i<hindiALL.length;i++)
+            { var x=hindiALL[i];
+                if(x.localeCompare(result)==0)
+                {
+                    i=100;
+                    console.log(i)
+                    break;  
+                }    
+            }
+           
+            if(i==100)
+            {
+                document.getElementById("correct").innerHTML="Correct Answer!!!";
+                document.getElementById("wrong").innerHTML="";
+                document.getElementById("showAnswer").innerHTML=""
+
+            }
+            else{
+                document.getElementById("wrong").innerHTML="Wrong Answer!!!";
+                document.getElementById("correct").innerHTML="";
+                document.getElementById("showAnswer").innerHTML="<button id='getCorrectSentence' onclick='show(this.id)'>Get Correct Sentence</button>"
+
+            }
+        }
+    }
 
