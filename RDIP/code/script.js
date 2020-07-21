@@ -165,6 +165,20 @@ var ranhi;
 
 
         }
+function reform()
+    {   //resets all displayed info
+        //console.log(reformButtons);
+        document.getElementById("jumbled-words").innerHTML = reformButtons;
+        document.getElementById("msgFormedSentence").innerHTML="";
+        document.getElementById("selectedWord").innerHTML ="";
+        document.getElementById("reformButton").innerHTML = "";
+        count=0;
+        document.getElementById("check-correctness").innerHTML="";
+        document.getElementById("correct").innerHTML="";
+        document.getElementById("wrong").innerHTML="";
+        document.getElementById("showAnswer").innerHTML=""
+
+    }
    function check()
     {
         var result= selectedSentence.trim();
