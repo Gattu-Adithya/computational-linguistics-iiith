@@ -250,7 +250,7 @@ function Lang()
             var p=0,t=0;
             while(arrwd.length>p)
             { t = Math.floor(Math.random() * arrwd.length);
-                if(arrwd[m]!="no"){
+                if(arrwd[t]!="no"){
                 wd[p]=arrwd[t];
                 arrwd[t]="no";
                 p++;
@@ -352,8 +352,8 @@ function Lang()
         {var i=0;
             result=result.trim();
             console.log(result)
-            for(i=0;i<hindiALL.length;i++)
-            { var x=hindiALL[i];
+            for(i=0;i<hiALL.length;i++)
+            { var x=hiALL[i];
                 if(x.localeCompare(result)==0)
                 {
                     i=100;
