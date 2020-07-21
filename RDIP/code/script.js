@@ -419,4 +419,18 @@ function reform()
             }
         }
     }
+ function toggle()
+    {
+        if(document.getElementById("hide").innerHTML=='Hide the Correct Sentences')
+        {
+            document.getElementById("showAnswer").innerHTML="";
+            document.getElementById("showAnswer").innerHTML="<button id='hide' onclick='toggle()'>Get Answers</button>";
+           // document.getElementById("hide").innerHTML="Get Answers"
+        }
+        else
+        {
+            document.getElementById("showAnswer").innerHTML+=answers;
+            document.getElementById("hide").innerHTML="Hide the Correct Sentences";    
+        }
+    }
 
