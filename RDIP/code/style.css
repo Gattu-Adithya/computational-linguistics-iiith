@@ -4,17 +4,17 @@ html{
 
 
 p {
-    font-size: 38px;
+    font-size: 39px;
 }
 .content{
     margin: -1% 18% 0% 15.4%;
 }
 .btn{
-     margin-right: 1%;
+     margin-right: 2%;
      
  }
  #msgformsent{
-     margin-top: 4%;
+     margin-top: 3%;
      text-align: center;
      color:rgb(41, 41, 194);
      font-weight: 599;
@@ -27,7 +27,7 @@ p {
      text-decoration: none;
  }
  .navigation{
-     color: blue;
+     color: white;
      padding: 0.6%;
  }
 .space{
@@ -117,8 +117,8 @@ p {
  }
  #selectedwd{
      font-size: 199%;
-     color:rgb(64, 60, 60);   
-       font-weight: 596;
+     color:rgb(66, 62, 62);   
+       font-weight: 599;
 
  }
  
@@ -127,14 +127,14 @@ p {
  }
  #crct{
      font-size: 199%;
-     color: red;
+     color: green;
      margin-top: 3%;
      text-align: center;
  }
  #wrng{
      color: red;
      text-align: center;
-     margin-top: 4%;
+     margin-top: 3%;
      font-size: 199%;
     
  }
